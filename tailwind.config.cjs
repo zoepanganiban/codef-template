@@ -37,7 +37,7 @@ module.exports = {
   plugins: [require("@tailwindcss/typography"), require("daisyui"), require("@tailwindcss/line-clamp")],
   // daisyUI config (optional)
   daisyui: {
-    theme: ["cmyk", "night"],
+    theme: ["light", "night"],
     darkTheme: "night",
   },
   darkMode: ["class", '[data-theme="night"]'],
