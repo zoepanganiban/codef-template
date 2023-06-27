@@ -15,9 +15,6 @@ const {
   activeLink = null,
 } = Astro.props as Props;
 const { navLinks } = pageSize;
-const {
-  metaData: { authorName },
-} = config;
 ---
 
 <html lang="en">
@@ -101,7 +98,7 @@ const {
               <input type="checkbox" />
               <!-- sun icon -->
               <svg
-                data-set-theme="cmyk"
+                data-set-theme="light"
                 data-act-class="ACTIVECLASS"
                 class="swap-on fill-current w-6 h-6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -148,15 +145,7 @@ const {
     <footer class="border-t px-4 py-6 mt-6">
       <p class="text-center text-sm">
         &copy; {new Date().getFullYear()}
-        {authorName}
-      </p>
-      <p class="text-center text-xs">
-        Built with <a
-          class="text-cyan-600 hover:text-black dark:hover:text-white"
-          href="https://astro.build"
-          target="_blank"
-          rel="noreferrer noopener">{Astro.generator}</a
-        >
+        CodeF
       </p>
     </footer>
     <style>
@@ -171,7 +160,7 @@ const {
         color-scheme: dark;
       }
 
-      html[data-theme="cmyk"] {
+      html[data-theme="light"] {
         --fill-color: 173 80% 40%;
         --stroke-color: 213 27% 84%;
         --hamburger-bg: 0 0% 70%;
@@ -206,27 +195,6 @@ const {
       }
       header polygon {
         fill: hsl(var(--er));
-      }
-
-      /* Logo Animation */
-      header > div > svg > path {
-        stroke-dasharray: var(--svg-totalLength);
-        stroke-dashoffset: var(--svg-totalLength);
-        animation: logoAnimation 5s forwards ease-in-out;
-        paint-order: stroke;
-      }
-
-      @keyframes logoAnimation {
-        from {
-          fill: hsl(var(--fill-color) / 0.1);
-          stroke: hsl(var(--stroke-color));
-        }
-
-        to {
-          stroke-dashoffset: 0;
-          fill: hsl(var(--fill-color));
-          stroke: hsl(var(--stroke-color) / 0);
-        }
       }
     </style>
 
@@ -309,8 +277,8 @@ const {
       import { themeChange } from "theme-change";
       themeChange();
       if (
-        localStorage["theme"] === "cmyk" ||
-        document.querySelector("html").getAttribute("data-theme") === "cmyk"
+        localStorage["theme"] === "light" ||
+        document.querySelector("html").getAttribute("data-theme") === "light"
       ) {
         document.querySelector<HTMLInputElement>(
           "#themeSetting > input"
