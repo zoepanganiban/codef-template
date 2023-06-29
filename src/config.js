@@ -1,8 +1,8 @@
 export default {
-  pageSize: 5,
+  pageSize: 10,
   metaData: {
-    authorName: "CodeF",
-    summary: "My personal blog",
+    authorName: "Zoe Panganiban",
+    summary: "My Website",
     category: "Blog",
     keywords: ["Blog", "Astro"],
     icon: "favicon.ico",

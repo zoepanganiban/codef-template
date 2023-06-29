@@ -3,6 +3,7 @@ layout: "@layouts/ArticleLayout.astro"
 title: My Third Article
 date: 17 July 2022
 image: /images/my-third-article/cardimage.jpg
+draft: true
 ---
 
 ![Icon](https://i.ytimg.com/vi/7Tt6Yv9czz8/maxresdefault.jpg)
