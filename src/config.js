@@ -2,9 +2,9 @@ export default {
   pageSize: 10,
   metaData: {
     authorName: "Zoe Panganiban",
-    summary: "My Website",
+    summary: "My Student City",
     category: "Blog",
-    keywords: ["Blog", "Astro"],
+    keywords: ["Blog", "Astro", "MyStudentCity", "University"],
     icon: "favicon.ico",
   },
 };
