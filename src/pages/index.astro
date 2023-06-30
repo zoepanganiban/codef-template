@@ -13,12 +13,13 @@ const posts = sortDateDescending(
 	<section
 		class="flex flex-col ml:flex-row justify-center mx-auto gap-12 mb-48 w-full rounded-lg" style="background-color: gainsboro"
 	>
+
 		<h1
-class="text-center bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent text-5xl mb-[0.7em]"
+class="text-center bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent text-5xl mb-[0.7em]" style="font-family: Playfair display;"
 >
 MyStudentCity - Discover <span class="font-bold">Newcastle</span>
 </h1>
-<p class="text-center text-2xl">
+<p class="text-center text-2xl" style="font-family: Playfair display;">
 Welcome to the ultimate guide to your student city – let the exploration begin!
 </p>
 <img
@@ -94,12 +95,14 @@ class="rounded-md h-fit self-center justify-self-center border-spacing-9"
 
 	<section>
 		<h2
-			class="mx-auto text-center mb-8 bg-gradient-orange text-transparent bg-clip-text text-4xl border-b-2 border-red-300 font-semibold w-fit"
+			class="mx-auto text-center mb-8 bg-gradient-orange text-transparent bg-clip-text text-4xl border-b-2 border-red-300 font-semibold w-fit" style="font-family: Playfair display;"
 		>
 			Explore Now
 		</h2>
 
-		<div class="grid grid-cols-3 justify-center gap-12">
+		<div class="grid grid-cols-3 justify-center gap-12 mx-auto mb-50 w-full rounded-lg" style="background-color: gainsboro"
+>
+		
 			{posts.map((post) => <ArticleCard content={post} />)}
 		</div>
 

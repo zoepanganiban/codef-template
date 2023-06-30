@@ -17,7 +17,7 @@ const description =
 ---
 
 <div
-  class="card bg-base-200 max-w-[90%] w-[52rem] mx-auto scale-1 hover:scale-105 transition-[scale_250ms] shadow-[0px_0px_20px_2px_rgb(0_0_0_/_50%)] dark:shadow-[0px_0px_20px_2px_rgb(255_255_255_/_50%)] focus-within:outline focus-within:outline-2 focus-within:outline-secondary"
+  class="card bg-base-200 max-w-[90%] w-[52rem] mx-auto scale-1 hover:scale-105 transition-[scale_250ms] shadow-[0px_0px_20px_2px_rgb(0_0_0_/_50%)] dark:shadow-[0px_0px_20px_2px_rgb(255_255_255_/_50%)] focus-within:outline focus-within:outline-2 focus-within:outline-secondary"  style="font-family: Playfair display;"
 >
   {
     content.frontmatter.image ? (
@@ -38,14 +38,15 @@ const description =
     ) : null
   }
 
-  <div class="card-body">
+  <div class="card-body" style="font-family: Playfair display;">
     <h2 class="card-title">{content.frontmatter.title}</h2>
     <p class="line-clamp-4 md:line-clamp-3">
       {description}
     </p>
     <div class="card-actions justify-end items-center">
-      <a href={content.url} class="btn btn-outline btn-primary capitalize"
-        >Read more&mldr;</a
+      <a href={content.url} class="btn btn-outline btn-primary capitalize" 
+        >Explore here 
+        </a
       >
     </div>
   </div>
